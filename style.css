@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+
+.main {
+    background-image: url("assets/img/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2000px, 100vw);
+    height: 80vh;
+    position: relative;
+    z-index: -1;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    z-index: -1;
+}
+
+nav {
+    /* background-color: rgb(255, 225, 0); */
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 16px 0;
+}
+
+nav img {
+    width: 140px;
+
+}
+
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 82px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+    padding: 0  30px;
+
+}
+
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 43px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+
+.seperation{
+    height: 7px;
+    background-color: rgb(59, 58, 58);
+    position: relative;
+    z-index: 2;
+}
+
+.btn{
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: rgba(15, 15, 15, 0.2);
+    color: white;
+    border-radius: 5px;
+    /* padding: 5px; */
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.btn-red-sm{
+    border-radius: 5px;
+    border: 0;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+}
+
+.main input{
+    color: white;
+    padding: 11px 100px 11px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(15, 15, 15, 0.7);
+
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(15, 15, 15, 0.2);
+    gap: 7px;
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+
+.secImg{
+    position: relative;
+    padding: 0 20px;
+}
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 1;
+
+}
+.secImg video{
+    position: absolute;
+    justify-content: center;
+    top:51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first >div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first div>:first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first div>:nth-child(2){
+    font-size: 24px;
+}
+
+footer{
+    margin: auto;
+    max-width: 60vw;
+    color: white;
+    padding: 14px;
+}
+
+
+
+
+.footer a{
+    color: white;
+    font-size: 14px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer .questions{
+    padding: 34px;
+}
+
+@media screen and (max-width: 1300px){
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .main {
+        height: 90vh;
+    }
+    
+    .main .box {
+        height: 90vh;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 305px;
+    
+    }
+    .secImg video{
+        width: 305px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        grid-gap: 25px;
+    }
+
+    .hero> :nth-child(1){
+        font-size: 35px;
+    }
+    .hero> :nth-child(2){
+        font-size: 15px;
+    }
+    .hero> :nth-child(3){
+        font-size: 15px;
+    }
+    
+}
+
+
+
