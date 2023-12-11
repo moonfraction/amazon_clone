@@ -6,5 +6,5 @@ creating responsive netflix clone
 watch video tutorial on youtube
 
 ### local development
-1.open index.html
-2.demo point
+1. used vs code for development
+2. followed code with harry tutorial
